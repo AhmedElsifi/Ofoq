@@ -1,4 +1,4 @@
-import ProtocolCard from "../UI/ProtocolCard";
+import ProtocolCard from "./ProtocolCard";
 
 // Home section presenting the three protocol phases as cards.
 export default function ProtocolSection() {

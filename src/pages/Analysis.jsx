@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
-import { getAnalysis } from "../lib/analysis";
-import { generateAnalysisPdf } from "../lib/analysisPdf";
-import { clearAnswers } from "../lib/storage";
+import { getAnalysis } from "../util/analysis";
+import { generateAnalysisPdf } from "../util/analysisPdf";
+import { clearAnswers } from "../util/storage";
 import { useQuestionsData } from "../hooks/useQuestionsData";
 import LoadingState from "../components/UI/LoadingState";
 import AnalysisHeader from "../components/Analysis/AnalysisHeader";

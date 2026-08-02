@@ -1,11 +1,11 @@
 import { useMemo, useState } from "react";
-import { generateReportPdf } from "../lib/reportPdf";
+import { generateReportPdf } from "../util/reportPdf";
 import {
   buildReportStats,
   buildDateString,
   buildPdfFilename,
   buildStatusMessage,
-} from "../lib/reportData";
+} from "../util/reportData";
 import { useQuestionsData } from "../hooks/useQuestionsData";
 import LoadingState from "../components/UI/LoadingState";
 import ReportHeader from "../components/Report/ReportHeader";

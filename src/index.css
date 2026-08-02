@@ -81,34 +81,107 @@
     font-family: "IBM Plex Sans Arabic", sans-serif;
     background-color: var(--color-bg);
     color: var(--color-text);
+    transition: background-color 0.6s ease, color 0.6s ease;
   }
+
+  body {
+    transition: background-color 0.6s ease, color 0.6s ease;
+  }
+}
+
+/* Golden Dawn theme: warm amber palette for the morning phase (05:00-12:00). */
+html[data-theme="morning"] {
+  --color-primary: #b45309;
+  --color-primary-light: #f59e0b;
+  --color-primary-dark: #92400e;
+  --color-bg: #1f150a;
+  --color-bg-variant: #140d05;
+  --color-bg-nav: #231808;
+  --color-bg-surface: #2e2010;
+  --color-bg-hover: #40311c;
+  --color-text: #fdf6ee;
+  --color-text-muted: #cbb896;
+  --color-border: #6b5338;
+  --color-m3-background: #1f150a;
+  --color-m3-surface: #1f150a;
+  --color-m3-surface-dim: #1f150a;
+  --color-m3-surface-container: #281b0d;
+  --color-m3-surface-container-low: #241909;
+  --color-m3-surface-container-lowest: #171006;
+  --color-m3-surface-variant: #40311c;
+  --color-m3-on-background: #fdf6ee;
+  --color-m3-on-surface: #fdf6ee;
+  --color-m3-on-surface-variant: #d6c7b3;
+  --color-m3-primary: #ffd9a1;
+  --color-m3-primary-container: #f59e0b;
+  --color-m3-primary-fixed: #ffe9cc;
+  --color-m3-primary-fixed-dim: #ffd9a1;
+  --color-m3-secondary: #fdba74;
+  --color-m3-secondary-container: #c2410c;
+  --color-m3-tertiary: #fbbf24;
+  --color-m3-outline: #b6a087;
+  --color-m3-outline-variant: #5a4a36;
+}
+
+/* Autopilot theme: sunset orange palette for the midday phase (12:00-18:00). */
+html[data-theme="midday"] {
+  --color-primary: #c2410c;
+  --color-primary-light: #fb923c;
+  --color-primary-dark: #9a3412;
+  --color-bg: #1d0f0a;
+  --color-bg-variant: #130806;
+  --color-bg-nav: #211209;
+  --color-bg-surface: #2b1710;
+  --color-bg-hover: #3d2417;
+  --color-text: #fdf6f0;
+  --color-text-muted: #c4a99a;
+  --color-border: #5f4032;
+  --color-m3-background: #1d0f0a;
+  --color-m3-surface: #1d0f0a;
+  --color-m3-surface-dim: #1d0f0a;
+  --color-m3-surface-container: #271510;
+  --color-m3-surface-container-low: #22120c;
+  --color-m3-surface-container-lowest: #160a06;
+  --color-m3-surface-variant: #3d2417;
+  --color-m3-on-background: #fdf6f0;
+  --color-m3-on-surface: #fdf6f0;
+  --color-m3-on-surface-variant: #d3c2b5;
+  --color-m3-primary: #ffcf9e;
+  --color-m3-primary-container: #fb923c;
+  --color-m3-primary-fixed: #ffe8d6;
+  --color-m3-primary-fixed-dim: #ffcf9e;
+  --color-m3-secondary: #fdba74;
+  --color-m3-secondary-container: #ea580c;
+  --color-m3-tertiary: #f9bd22;
+  --color-m3-outline: #a89588;
+  --color-m3-outline-variant: #57392c;
 }
 
 @layer utilities {
   .hero-glow {
     background-image: radial-gradient(
       circle at 50% 50%,
-      rgba(99, 102, 241, 0.15) 0%,
-      rgba(99, 102, 241, 0) 70%
+      color-mix(in srgb, var(--color-primary) 15%, transparent) 0%,
+      color-mix(in srgb, var(--color-primary) 0%, transparent) 70%
     );
   }
 
   .glass-card {
-    background: rgba(30, 41, 59, 0.7);
+    background: color-mix(in srgb, var(--color-bg-surface) 70%, transparent);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(71, 85, 105, 0.4);
+    border: 1px solid color-mix(in srgb, var(--color-border) 40%, transparent);
   }
 
   .glass-panel {
-    background: rgba(30, 41, 59, 0.7);
+    background: color-mix(in srgb, var(--color-bg-surface) 70%, transparent);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(71, 85, 105, 0.3);
+    border: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
   }
 
   .glowing-text {
-    text-shadow: 0 0 20px rgba(192, 193, 255, 0.4);
+    text-shadow: 0 0 20px color-mix(in srgb, var(--color-m3-primary) 40%, transparent);
   }
 }
 

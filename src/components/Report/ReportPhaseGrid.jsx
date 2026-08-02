@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PHASES } from "../../lib/questions";
+import { PHASES } from "../../util/questions";
 
 // Status label and badge styling for each phase state.
 const STATUS_META = {

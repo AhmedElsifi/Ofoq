@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PHASES, PHASE_ORDER } from "../../lib/questions";
+import { PHASES, PHASE_ORDER } from "../../util/questions";
 
 // Completion screen shown after finishing a phase.
 export default function PhaseComplete({ phase, answered, total, onReview }) {

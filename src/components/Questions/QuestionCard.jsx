@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { PHASES } from "../../lib/questions";
+import { PHASES } from "../../util/questions";
 import QuestionProgress from "./QuestionProgress";
 import QuestionActions from "./QuestionActions";
 
@@ -68,7 +68,7 @@ export default function QuestionCard({
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder={PLACEHOLDERS[question.phase] || PLACEHOLDERS.morning}
-            className="w-full min-h-[300px] md:min-h-[400px] bg-bg-surface/70 backdrop-blur border border-border/50 rounded-xl p-5 text-text text-base md:text-lg leading-loose placeholder:text-text-muted/40 focus:outline-none focus:border-primary/70 focus:shadow-[0_0_20px_rgba(99,102,241,0.15)] transition-all duration-300 resize-y"
+            className="w-full min-h-[300px] md:min-h-[400px] bg-bg-surface/70 backdrop-blur border border-border/50 rounded-xl p-5 text-text text-base md:text-lg leading-loose placeholder:text-text-muted/40 focus:outline-none focus:border-primary/70 focus:shadow-[0_0_20px_color-mix(in_srgb,var(--color-primary)_15%,transparent)] transition-all duration-300 resize-y"
           />
           <div className="absolute bottom-4 left-4 text-text-muted text-xs bg-bg-surface/60 backdrop-blur px-2.5 py-1 rounded-lg border border-border/40">
             {wordCount} كلمة

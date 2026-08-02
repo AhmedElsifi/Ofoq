@@ -1,4 +1,4 @@
-import { richText } from "../../lib/richText";
+import { richText } from "../../util/richText";
 
 // Render a single theory block according to its type.
 export default function BlockRenderer({ block }) {

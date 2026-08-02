@@ -56,13 +56,13 @@ export default function InsightsVisuals({ keywords, clarity }) {
             <path
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               fill="none"
-              stroke="#2d3449"
+              className="stroke-bg-hover"
               strokeWidth="3"
             />
             <path
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               fill="none"
-              stroke="#6366F1"
+              className="stroke-primary"
               strokeWidth="3"
               strokeLinecap="round"
               strokeDasharray={`${clarity.percent}, 100`}

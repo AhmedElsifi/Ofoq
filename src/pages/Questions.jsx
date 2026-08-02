@@ -6,7 +6,7 @@ import PhaseComplete from "../components/Questions/PhaseComplete";
 import QuestionsEmpty from "../components/Questions/QuestionsEmpty";
 import LoadingState from "../components/UI/LoadingState";
 import ErrorState from "../components/UI/ErrorState";
-import { getPhaseByTime, isPhase } from "../lib/questions";
+import { getPhaseByTime, isPhase } from "../util/questions";
 import { useQuestionsAnswers } from "../hooks/useQuestionsAnswers";
 
 // Question journal flow for a phase, with progress, saving, and completion.

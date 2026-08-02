@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { fetchQuestions } from "../lib/questions";
-import { getAnswer, saveAnswer } from "../lib/storage";
+import { fetchQuestions } from "../util/questions";
+import { getAnswer, saveAnswer } from "../util/storage";
 
 // Loads questions and per-question saved answers; provides an update helper.
 export function useQuestionsAnswers() {

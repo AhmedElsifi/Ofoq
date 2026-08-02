@@ -27,7 +27,11 @@ export default function ReportProgressRing({ percent, statusMessage }) {
     <section className="relative flex flex-col items-center justify-center pt-20 pb-12">
       <div className="relative w-52 h-52 md:w-64 md:h-64 flex items-center justify-center">
         <svg
-          className="w-full h-full drop-shadow-[0_0_15px_rgba(99,102,241,0.3)]"
+          className="w-full h-full"
+          style={{
+            filter:
+              "drop-shadow(0 0 15px color-mix(in srgb, var(--color-primary) 30%, transparent))",
+          }}
           viewBox="0 0 100 100"
         >
           <circle
@@ -35,7 +39,7 @@ export default function ReportProgressRing({ percent, statusMessage }) {
             cy="50"
             r="45"
             fill="transparent"
-            stroke="rgba(30, 41, 59, 0.6)"
+            className="stroke-bg-surface opacity-60"
             strokeWidth="12"
           />
           <circle
@@ -43,7 +47,7 @@ export default function ReportProgressRing({ percent, statusMessage }) {
             cy="50"
             r="45"
             fill="transparent"
-            stroke="#6366F1"
+            className="stroke-primary"
             strokeWidth="12"
             strokeLinecap="round"
             strokeDasharray={CIRCUMFERENCE}

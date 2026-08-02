@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PHASES, PHASE_ORDER } from "../../lib/questions";
+import { PHASES, PHASE_ORDER } from "../../util/questions";
 
 // Tab bar to switch between the three daily phases.
 export default function PhaseSelector({ phase }) {

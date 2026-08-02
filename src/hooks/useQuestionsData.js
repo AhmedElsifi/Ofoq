@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { fetchQuestions } from "../lib/questions";
-import { loadAnswers } from "../lib/storage";
+import { fetchQuestions } from "../util/questions";
+import { loadAnswers } from "../util/storage";
 
 // Loads questions and all stored answers once; exposes them with a setter.
 export function useQuestionsData() {

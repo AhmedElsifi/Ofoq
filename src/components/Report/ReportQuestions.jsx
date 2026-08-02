@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getPhaseByTime, PHASES } from "../../lib/questions";
+import { getPhaseByTime, PHASES } from "../../util/questions";
 import ReportQuestionTabs from "./ReportQuestionTabs";
 import ReportQuestionItem from "./ReportQuestionItem";
 

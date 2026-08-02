@@ -1,4 +1,4 @@
-import { PHASES, PHASE_ORDER } from "../../lib/questions";
+import { PHASES, PHASE_ORDER } from "../../util/questions";
 
 // Phase tab bar for filtering the report's question list.
 export default function ReportQuestionTabs({ questions, answers, activePhase, onChange }) {
