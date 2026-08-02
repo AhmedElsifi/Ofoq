@@ -87,6 +87,12 @@
   body {
     transition: background-color 0.6s ease, color 0.6s ease;
   }
+
+  /* Text selection uses the current time-of-day primary color, semi-transparent. */
+  ::selection {
+    background: color-mix(in srgb, var(--color-primary) 35%, transparent);
+    color: var(--color-text);
+  }
 }
 
 /* Golden Dawn theme: warm amber palette for the morning phase (05:00-12:00). */
