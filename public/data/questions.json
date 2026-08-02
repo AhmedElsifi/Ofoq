@@ -247,6 +247,15 @@
         {
             "id": 28,
             "phase": "evening",
+            "section": "المساء · صهر الاستبصارات",
+            "time": null,
+            "title": "رسالة من المستقبل",
+            "question": "تخيل إنك قاعد بعد ١٠ سنين، وبتكتب رسالة لنفسك النهاردة. إيه النصيحة اللي هتديها لنفسك؟ وإيه اللي تتمنى إنك كنت عرفته بدري؟",
+            "answer": null
+        },
+        {
+            "id": 29,
+            "phase": "evening",
             "section": "الأهداف كعدسات",
             "time": null,
             "title": "عدسة السنة",
@@ -254,7 +263,7 @@
             "answer": null
         },
         {
-            "id": 29,
+            "id": 30,
             "phase": "evening",
             "section": "الأهداف كعدسات",
             "time": null,
@@ -263,7 +272,7 @@
             "answer": null
         },
         {
-            "id": 30,
+            "id": 31,
             "phase": "evening",
             "section": "الأهداف كعدسات",
             "time": null,
@@ -272,7 +281,7 @@
             "answer": null
         },
         {
-            "id": 31,
+            "id": 32,
             "phase": "evening",
             "section": "خطة اللعبة · المكونات الستة",
             "time": null,
@@ -281,7 +290,7 @@
             "answer": null
         },
         {
-            "id": 32,
+            "id": 33,
             "phase": "evening",
             "section": "خطة اللعبة · المكونات الستة",
             "time": null,
@@ -290,7 +299,7 @@
             "answer": null
         },
         {
-            "id": 33,
+            "id": 34,
             "phase": "evening",
             "section": "خطة اللعبة · المكونات الستة",
             "time": null,
@@ -299,7 +308,7 @@
             "answer": null
         },
         {
-            "id": 34,
+            "id": 35,
             "phase": "evening",
             "section": "خطة اللعبة · المكونات الستة",
             "time": null,
@@ -308,7 +317,7 @@
             "answer": null
         },
         {
-            "id": 35,
+            "id": 36,
             "phase": "evening",
             "section": "خطة اللعبة · المكونات الستة",
             "time": null,
@@ -317,7 +326,7 @@
             "answer": null
         },
         {
-            "id": 36,
+            "id": 37,
             "phase": "evening",
             "section": "خطة اللعبة · المكونات الستة",
             "time": null,
